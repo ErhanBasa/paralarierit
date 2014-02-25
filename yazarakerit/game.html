@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Paraları Erit, Paraları Sıfırla!</title>
+<title>Paraları Erit | Paraları Yazarak Sıfırla</title>
 <link rel="shortcut icon" href="/static/favicon.ico" />
 
 <meta charset="utf-8">
@@ -11,16 +11,23 @@
 <meta name="keywords" content="paraları erit, paraları sıfırla, sümeyye geldi mi" />
 <meta name="description" content="Paraları hızlıca sıfırla, telefonda çok şey yapma." />
 
+<meta property="og:title" content="Paraları Erit | Paraları Yazarak Sıfırla"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="Thumbnail resmini buraya giriniz"/>
+<meta property="og:url" content="Sayfa linkini buraya giriniz."/>
+<meta property="og:description" content="Paraları hızlıca sıfırla, telefonda çok şey yapma."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="Sayfa linkini buraya giriniz.">
+<meta name="twitter:title" content="Paraları Erit | Paraları Yazarak Sıfırla">
+<meta name="twitter:description" content="Paraları hızlıca sıfırla, telefonda çok şey yapma.">
+<meta name="twitter:image" content="Cover resmini buraya giriniz">
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
 <style>
-  *         {margin: 0px; padding: 0px;}
   #header   {background: #282623; color: #fff; padding: 30px 0; text-align: center;}
   .container   {width: 940px; margin:0 auto;}
-  .gamelist .game   {width:  30%; float: left; margin-left: 5%; margin-top: 30px; position: relative;}
-  .gamelist .game:first-child   {margin-left: 0;}
-  .gamelist .game img   {max-width: 100%;}
-  .gamelist .game h3 a   {position: absolute; background: rgba(0,0,0,.8); width: 100%; bottom: -30px; height: 60px; padding: 15px 0; z-index: 100; color: #fff; text-decoration: none; text-indent: 20px; font: normal 24px/60px Century Gothic,sans-serif;}
-
-  #footer     {padding: 50px; float: left;}
 </style>
 </head>
 <body>
@@ -28,57 +35,34 @@
 <!-- Header -->
 <div id="header">
   <div class="container">
-    <h1>
-      <a href="/" title="Paraları Erit! Paraları Sıfırla!">
-        <img src="images/logo.png" alt="Paraları Erit! Paraları Sıfırla!">
-      </a>
-    </h1>
+    <h1><a href="/" title="Paraları Erit! Paraları Sıfırla!"><img src="../images/logo.png" alt="Paraları Erit! Paraları Sıfırla!"></a></h1>
   </div>
 </div>
 <!-- Header -->
 
 <!-- Content -->
-<div id="content">
+<div id="Content">
   <div class="container">
-    
-    <div class="gamelist">
-      
-      <div class="game">
-        <a href="atesteerit/game.html">
-          <img src="images/ateste-erit.jpg">
-        </a>
-        <h3>
-          <a href="atesteerit/game.html">Ateşte Erit</a>
-        </h3>
-      </div>
 
-      <div class="game">
-        <a href="yazarakerit/game.html">
-          <img src="images/yazarak-erit.jpg">
-        </a>
-        <h3>
-          <a href="#">Yazarak Erit</a>
-        </h3>
+      <div class="left">
+        <span data-js="numbers" class="numbers">$</span>
+        <span data-js="message" class="message"><small>Eritmek İçin Enter'a Bas</small></span>
+        <input type="text" class="mobile-in" maxlength="1">
       </div>
-
-      <div class="game">
-        <a href="vurarakerit/game.html">
-          <img src="images/vurarak-erit.jpg">
-        </a>
-        <h3>
-          <a href="#">Vurarak Erit</a>
-        </h3>
+      <div class="left">
+        <p data-js="level" class="level">Seviye: _</p>
+        <p class="rules">Sen 3 milyar 750 milyon çok para var çok, numaraları yaz hemen erit! Telefondada çok şey yapma. Samandıra'yı unutma!</p>
       </div>
-      
-
-    </div>
+      <!--[if IE]><div class="iehider"></div><![endif]-->
 
   </div>
+
+  
 </div>
 <!-- Content -->
 
 <!-- Social Share -->
-<div class="social-share" style="width:100%; float:left; margin-top:100px; margin-bottom:20px;">
+<div class="social-share" style="width:100%; float:left; margin-top:50px; margin-bottom:20px;">
   <div class="container">
     <a class="share-btn facebook" style="background:#3b5998; width:48%; color:#fff; float:left; height:40px; text-align:center; cursor:pointer; font: normal 14px/40px Century Gothic,sans-serif;" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
       <span class="share-text">Facebook'ta Paylaş!</span>
@@ -90,5 +74,6 @@
 </div>
 <!-- Social Share -->
 
+<script type="text/javascript" src="game.js"></script>
 </body>
 </html>

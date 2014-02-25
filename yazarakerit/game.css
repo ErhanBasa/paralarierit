@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+}
+
+p {
+  max-width: 25em;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+.left {
+  float: left;
+}
+
+.numbers,
+.message {
+  font-size: 2em;
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 15em;
+}
+
+.numbers {
+  border: 1px dashed black;
+  display: block;
+}
+
+.message {
+  background: lightyellow;
+  border: 1px dashed #ca5;
+  box-shadow: 0 0 0 5px lightyellow, 0 0 0 6px #fec;
+  display: inline-block;
+  text-align: center;
+}
+
+.mobile-in {
+  display: none;
+  font-size: 2em;
+  margin: 0.5em;
+  padding: 0.125em;
+  width: 2em;
+}
+
+@media (max-width: 30em) {
+  .mobile-in {
+    display: block;
+  }
+}
+.level {
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+.rules {
+  font-size: 1.2em;
+  line-height: 1.3;
+  padding: 1em;
+}
+
+.iehider {
+  background: white;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
